@@ -29,7 +29,9 @@ function SalesAnalyzer() {
   const fetchData = async (endpoint, setter) => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:2000/${endpoint}`);
+      const response = await axios.get(
+        `https://data-analyzer-28a33d21fbe6.herokuapp.com/${endpoint}`
+      );
       setter(response.data);
       setLoading(false);
     } catch (error) {
