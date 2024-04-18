@@ -12,6 +12,7 @@ Ice Cream Parlour Sales Analyzer is a React web application designed to analyze 
 
 ## Technologies Used
 
+- Node.js
 - React
 - JavaScript (ES6+)
 - HTML5
