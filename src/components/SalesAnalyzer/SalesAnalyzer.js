@@ -181,7 +181,6 @@ function SalesAnalyzer() {
                   <tr>
                     <th>Month</th>
                     <th>Item</th>
-                    <th>Quantity</th>
                     <th>Min Orders</th>
                     <th>Max Orders</th>
                     <th>Avg Orders</th>
@@ -189,14 +188,10 @@ function SalesAnalyzer() {
                 </thead>
                 <tbody>
                   {Object.entries(mostPopularItemStats).map(
-                    ([
-                      month,
-                      {item, quantity, minOrders, maxOrders, avgOrders},
-                    ]) => (
+                    ([month, {item, minOrders, maxOrders, avgOrders}]) => (
                       <tr key={month}>
                         <td>{monthNames[month]}</td>
                         <td>{item}</td>
-                        <td>{quantity}</td>
                         <td>{minOrders}</td>
                         <td>{maxOrders}</td>
                         <td>{avgOrders}</td>
